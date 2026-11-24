@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>formulaire road trip</title>
+    <link rel="stylesheet" href="roadtrip.css" />
+  </head>
+  <body>
+    <nav>
+      <h3>Echapée libre</h3>
+      <ul>
+        <li><a href="accueil.html">Accueil</a></li>
+        <li><a href="organisation.html">Organisez votre road trip</a></li>
+        <li><a href="conseil.html">Conseils</a></li>
+        <li><a href="inspirations.html">inspirations</a></li>
+      </ul>
+    </nav>
+    <header>
+      <h1>Echapée libre</h1>
+
+      <h2>ORGANISEZ VOTRE PROCHAIN ROAD TRIP</h2>
+      <p class="slogan">Votre aventure commence là où la route vous mènne!</p>
+    </header>
+    <main>
+      <aside class="intro">
+        <div class="presentation">
+          <div class="boussole">
+            <h3>Un road trip à votre image</h3>
+            <img src="image/boussole aventure.png" alt="logo boussole" />
+          </div>
+          <p>Choississez votre destination,votre rythme et vos envies.</p>
+          <div class="van">
+            <h3>Liberté & découvertes</h3>
+            <img src="image/van.png" alt="logo de van aménageé" />
+          </div>
+          <p>Voyagez autrement, au plus proche des paysages et des cultures.</p>
+          <div class="aventure">
+            <h3>Une aventure sur mesure.</h3>
+            <img src="image/aventure.png" alt="logo nature aveture " />
+          </div>
+          <p>
+            Nature, culture, détente, grands espaces...à vous de créer le voyage
+            idéal !
+          </p>
+        </div>
+      </aside>
+
+      <aside class="destinations">
+        <h2 class="titre-infos">Des idées de destinations</h2>
+        <img
+          src="image/trait de pinceau.jpg"
+          alt="trait de pinceau coloré"
+          class="pinceau"
+        />
+        <div class="grille-destinations">
+          <div class="carte">
+            <img src="image/croatie.jpg" alt="croatie" />
+            <h3>Croatie</h3>
+          </div>
+          <div class="carte">
+            <img src="image/fjord.jpg" alt="norvege" />
+            <h3>Norvège</h3>
+          </div>
+          <div class="carte">
+            <img src="image/italie.jpg" alt="italie" />
+            <h3>Italie</h3>
+          </div>
+          <div class="carte">
+            <img src="image/egypte.jpg" alt="egypte" />
+            <h3>Egypte</h3>
+          </div>
+        </div>
+      </aside>
+      <form action="">
+        <fieldset class="compte">
+          <h2>
+            <img
+              src="image/let's go.jpg"
+              alt="logo let's go"
+              class="logo-letsgo"
+            />
+          </h2>
+          <legend>créez votre compte</legend>
+
+          <label>Nom<input type="text" name="nom" required /></label>
+          <label>Prénom<input type="text" name="prenom" required /></label>
+          <label
+            >Adresse Email<input type="email" name="email" required />
+          </label>
+          <label
+            >pays de résidence
+            <select name="pays" required>
+              <option value="">Choisissez un pays</option>
+              <option value="de">Allemagne</option>
+              <option value="be">Belgique</option>
+              <option value="es">Espagne</option>
+              <option value="us">Etats-unis</option>
+              <option value="fr">France</option>
+              <option value="it">Italie</option>
+              <option value="lu">Luxembourg</option>
+              <option value="ma">Maroc</option>
+              <option value="pb">Pays-Bas</option>
+              <option value="pl">Pologne</option>
+              <option value="pt">Portugal</option>
+              <option value="gb">Royaume-Uni</option>
+              <option value="ch">Suisse</option>
+            </select></label
+          >
+
+          <label>Ville<input type="text" name="ville" /></label>
+
+          <label>Téléphone<input type="tel" name="tel" /></label>
+          <label
+            >Date de naissance<input type="date" name="naissance" required
+          /></label>
+          <label
+            >Mot de passe
+            <div class="champ-mdp">
+              <input
+                type="password"
+                name="password"
+                minlength="8"
+                placeholder="8 caractères minimum."
+                required
+              />
+              <button
+                type="button"
+                class="oeil"
+                aria-label="Afficher le mot de passe"
+              >
+                👁️
+              </button>
+            </div></label
+          >
+          <label
+            >confirmer Mot de passe<input
+              type="password"
+              name="confirmation"
+              placeholder="retaper votre mot de passe"
+              required
+          /></label>
+          <button type="submit">créer mon compte</button>
+        </fieldset>
+      </form>
+    </main>
+    <footer>
+      <p>&copy;2026 Road Trip -Tous droits réservés</p>
+      <nav>
+        <a href="accueil.html">Accueil</a>
+        <a href="organisation.html">Organisez votre road trip</a>
+        <a href="conseil.html">Conseils</a>
+        <a href="inspirations.html">Inspirations</a>
+      </nav>
+      <p>
+        contact : <a href="mailto:contact@roadtrip.be">contact@roadtrip.be</a>
+      </p>
+    </footer>
+  </body>
+</html>

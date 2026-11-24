@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>formulaire road trip</title>
+    <link rel="stylesheet" href="roadtrip.css" />
+  </head>
+  <body>
+    <nav>
+      <h3>Echapée libre</h3>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="organisation.html">Organisez votre road trip</a></li>
+        <li><a href="conseil.html">Conseils</a></li>
+        <li><a href="inspirations.html">inspirations</a></li>
+      </ul>
+    </nav>
+    <header>
+      <h1>Echapée libre</h1>
+
+      <h2>ORGANISEZ VOTRE PROCHAIN ROAD TRIP</h2>
+      <p>Votre aventure commence là où la route vous mènne!</p>
+    </header>
+    <main class="encadrement formulaire">
+      <form action="" class="form">
+        <h2>1.Organisez votre road trip!</h2>
+        <fieldset class="organiser">
+          <legend>Votre destination</legend>
+          <label
+            >Destination<input
+              type="text"
+              name="destination"
+              placeholder="Choisissez un pays" /></label
+          ><br />
+          <label
+            >ville de départ<input
+              type="text"
+              name="départ"
+              placeholder="votre ville" /></label
+          ><br />
+          <div class="date">
+            <label>Départ<input type="date" name="date départ" /></label><br />
+            <label>Retour<input type="date" name="date de retour" /></label
+            ><br />
+          </div>
+        </fieldset>
+
+        <h2 class="titre-infos">2.Votre voyage</h2>
+        <h3 class="infos-choix">Choix de votre véhicule:</h3>
+        <section class="choix-vehicule">
+          <div class="logo" id="camping-car">
+            <a href="camping-car.html"
+              ><img src="image/logo camping car.png" alt="camping-car"
+            /></a>
+          </div>
+          <div class="logo" id="voiture">
+            <a href="voiture.html"
+              ><img src="image/logo voiture.jpg" alt="voiture"
+            /></a>
+          </div>
+          <div class="logo" id="moto">
+            <a href="moto.html"
+              ><img src="image/logo moto.jpg" alt="moto" />
+            </a>
+          </div>
+        </section>
+
+        <label
+          >Nombre d adultes<input
+            type="number"
+            name="adultes"
+            min="1"
+            max="8"
+            value="1" /></label
+        ><br />
+
+        <label
+          >Nombre d'enfants<input
+            type="number"
+            name="enfants"
+            min="0"
+            max="8"
+            value="0" /></label
+        ><br />
+
+        <h2 class="hebergement">3.Hébergement et budget</h2>
+        <h3 class="infos-choix">Type d'hébergement</h3>
+
+        <div class="heberg-budget">
+          <div class="hebergement-choix">
+            <label class="option"
+              ><input
+                type="checkbox"
+                name="heberggement"
+                value="camping"
+              />Camping</label
+            >
+            <label class="option"
+              ><input
+                type="checkbox"
+                name="hebergement"
+                value="hotel"
+              />Hôtel/Chambre d'hôtes</label
+            >
+            <label class="option"
+              ><input type="checkbox" name="hebergement" value="vehicule" />Dans
+              mon véhicule</label
+            >
+            <label class="option"
+              ><input
+                type="checkbox"
+                name="hébergement"
+                value="Location"
+              />Location de vacances</label
+            >
+          </div>
+
+          <div class="budget">
+            <label>budget total estimé</label>
+            <div class="budget-valeur"><span id="montant">1 000</span>€</div>
+            <input
+              type="range"
+              id="budget"
+              name="budget"
+              min="500"
+              max="15000"
+              step="50"
+              value="1000"
+            />
+            <div class="budget-limites">
+              <span>500 €</span>
+              <span>15 000€</span>
+            </div>
+          </div>
+        </div>
+      </form>
+    </main>
+    <footer>
+      <p>&copy;2026 Road Trip -Tous droits réservés</p>
+      <nav>
+        <a href="accueil.html">Accueil</a>
+        <a href="organisation.html">Organisez votre road trip</a>
+        <a href="conseil.html">Conseils</a>
+        <a href="inspirations.html">Inspirations</a>
+      </nav>
+      <p>
+        contact : <a href="mailto:contact@roadtrip.be">contact@roadtrip.be</a>
+      </p>
+    </footer>
+  </body>
+</html>
